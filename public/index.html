@@ -60,96 +60,40 @@
     <meta name="viewport" content="width=device-width">
     <title>Amazing HTML5 Audio Player, powered by http://amazingaudioplayer.com</title>
     <!-- Insert to your webpage before the </head> -->
-    <script src="audioplayerengine/jquery.js"></script>
-    <script src="audioplayerengine/amazingaudioplayer.js"></script>
-    <link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-1.css">
-    <script src="audioplayerengine/initaudioplayer-1.js"></script>
-    <!-- End of head section HTML codes -->
+<html class=" webkit chrome win js" xmlns:fb="http://ogp.me/ns/fb#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+  
+  
+
+    
+        <link type="text/css" rel="stylesheet" href="./Jee Juh - Hip Hop Beats for sale _ Buy Rap Instrumentals Online _ Download Royalty Free Music_files/jplayer17.css">
+    <link type="text/css" rel="stylesheet" href="./Jee Juh - Hip Hop Beats for sale _ Buy Rap Instrumentals Online _ Download Royalty Free Music_files/genre-menu.css">
+    <script src="./Jee Juh - Hip Hop Beats for sale _ Buy Rap Instrumentals Online _ Download Royalty Free Music_files/0619.js" async="" type="text/javascript"></script>
+    <script id="twitter-wjs" src="./Jee Juh - Hip Hop Beats for sale _ Buy Rap Instrumentals Online _ Download Royalty Free Music_files/widgets.js">
+    </script>
+
+
+    <script type="text/javascript" src="./Jee Juh - Hip Hop Beats for sale _ Buy Rap Instrumentals Online _ Download Royalty Free Music_files/jplayer26.js">
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
 
-
-
-
-
-
-<!-- Start of Script -->  
-<SCRIPT type=text/javascript>
-<!--
-function Dollar (val) {  // force to valid dollar amount
-var str,pos,rnd=0;
-  if (val < .995) rnd = 1;  // for old Netscape browsers
-  str = escape (val*1.0 + 0.005001 + rnd);  // float, round, escape
-  pos = str.indexOf (".");
-  if (pos > 0) str = str.substring (rnd, pos + 3);
-  return str;
-}function ReadForm (obj1, tst) { // process radio and checkbox
-var i,j,amt=0,des="",obj,pos,val,tok,tag,
-  op1a="",op1b="",op2a="",op2b="",itmn="";
-var ary = new Array ();
-  if (obj1.baseamt) amt  = obj1.baseamt.value*1.0;  // base amount
-  if (obj1.basedes) des  = obj1.basedes.value;  // base description
-  if (obj1.baseon0) op1a = obj1.baseon0.value;  // base options
-  if (obj1.baseos0) op1b = obj1.baseos0.value;
-  if (obj1.baseon1) op2a = obj1.baseon1.value;
-  if (obj1.baseos1) op2b = obj1.baseos1.value;
-  if (obj1.baseitn) itmn = obj1.baseitn.value;
-  for (i=0; i<obj1.length; i++) {  // run entire form
-    obj = obj1.elements[i];        // a form element
-    if (obj.type == "checkbox" ||  // checkboxes
-        obj.type == "radio") {     //  and radios
-      if (obj.checked) {           // did user check it?
-        val = obj.value;           // the value of the selection
-        ary = val.split (" ");          // break apart
-        for (j=0; j<ary.length; j++) {  // look at all items
-// first we do single character tokens...
-          if (ary[j].length < 2) continue;
-          tok = ary[j].substring (0,1); // first character
-          val = ary[j].substring (1);   // get data
-          if (tok == "@") amt = val * 1.0;
-          if (tok == "+") amt = amt + val*1.0;
-          if (tok == "%") amt = amt + (amt * val/100.0);
-          if (tok == "#") {             // record item number
-            if (obj1.item_number) obj1.item_number.value = val;
-          ary[j] = "";                // zap this array element
-          }
-// Now we do 3-character tokens...
-          if (ary[j].length < 4) continue;
-          tok = ary[j].substring (0,3); // first 3 chars
-          val = ary[j].substring (3);   // get data
-          if (tok == "s1=") {           // value for shipping
-            if (obj1.shipping)  obj1.shipping.value  = val;
-            ary[j] = "";                // clear it out
-          }
-          if (tok == "s2=") {           // value for shipping2
-            if (obj1.shipping2) obj1.shipping2.value = val;
-            ary[j] = "";                // clear it out
-          }
-        }
-        val = ary.join (" ");           // rebuild val with what's left        tag = obj.name.substring (obj.name.length-2);  // get flag
-        if      (tag == "1a") op1a = op1a + " " + val;
-        else if (tag == "1b") op1b = op1b + " " + val;
-        else if (tag == "2a") op2a = op2a + " " + val;
-        else if (tag == "2b") op2b = op2b + " " + val;
-        else if (tag == "3i") itmn = itmn + " " + val;
-        else if (des.length == 0) des = val;
-        else des = des + ", " + val;
-      }
-    }
-  }
-// Now summarize stuff we just processed, above
-  if (op1a.length > 0) obj1.on0.value = op1a;
-  if (op1b.length > 0) obj1.os0.value = op1b;
-  if (op2a.length > 0) obj1.on1.value = op2a;
-  if (op2b.length > 0) obj1.os1.value = op2b;
-  if (itmn.length > 0) obj1.item_number.value = itmn;
-  obj1.item_name.value = des;
-  obj1.amount.value = Dollar (amt);
-  if (obj1.tot) obj1.tot.value = "$" + Dollar (amt);
-}
-//-->
-</SCRIPT>
 
 
 
@@ -239,163 +183,1166 @@ var ary = new Array ();
 
 
 <br><br><br><br>
-<div style="margin:12px auto;">
-    
-    <!-- Insert to your webpage where you want to display the audio player -->
-    <div id="amazingaudioplayer-1" style="display:block;position:relative;width:420px;height:auto;margin:0px auto 0px;">
-        <ul class="amazingaudioplayer-audios" style="display:none;">
-            <li data-artist="Nein" data-title="Streets - Rick ross type Instrumental" data-album="" data-info="" data-image="" data-duration="57">
-                <div class="amazingaudioplayer-source" data-src="audios/Drake type beat 1.mp3" data-type="audio/mpeg" />
-            </li>
-            <li data-artist="" data-title="1Demo" data-album="" data-info="" data-image="audios/s106.jpg" data-duration="200">
-                <div class="amazingaudioplayer-source" data-src="audios/04 beats gno jackaee.mp3" data-type="audio/mpeg" />
-            </li>
-            <li data-artist="" data-title="Crownit - Demo" data-album="" data-info="" data-image="audios/41ccd4425e22b696680b2f0011af4e56.jpg" data-duration="325">
-                <div class="amazingaudioplayer-source" data-src="audios/Crownit - 808 Insturmental.mp3" data-type="audio/mpeg" />
-            </li>
-            <li data-artist="" data-title="Demo 3" data-album="" data-info="" data-image="audios/388007_107775389340148_1591421740_n.jpg" data-duration="198">
-                <div class="amazingaudioplayer-source" data-src="audios/Crownit - Gone instrumental.mp3" data-type="audio/mpeg" />
-            </li>
-            <li data-artist="" data-title="Demo 4" data-album="" data-info="" data-image="" data-duration="222">
-                <div class="amazingaudioplayer-source" data-src="audios/Crownit - Destiny Instrumental.mp3" data-type="audio/mpeg" />
-            </li>
-            <li data-artist="" data-title="Demo 5" data-album="" data-info="" data-image="" data-duration="207">
-                <div class="amazingaudioplayer-source" data-src="audios/Crownit - I Remember Instrumental.mp3" data-type="audio/mpeg" />
-            </li>
-            <li data-artist="" data-title="New thang Demo" data-album="" data-info="" data-image="" data-duration="384">
-                <div class="amazingaudioplayer-source" data-src="audios/Crownit - New Thang Instrumental.mp3" data-type="audio/mpeg" />
-            </li>
-            <li data-artist="Shynencom" data-title="Demo 6" data-album="" data-info="" data-image="" data-duration="187">
-                <div class="amazingaudioplayer-source" data-src="audios/Crownit - Turne up and faded Instrumental.mp3" data-type="audio/mpeg" />
-            </li>
-        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script language="JavaScript" type="text/javascript">
+        AC_FL_RunContent(
+          'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+          'width', '434',
+          'height', '157',
+          'src', '/jeejuhplayer/jeejuhplayer_6_12',
+          'quality', 'high',
+          'pluginspage', 'http://www.adobe.com/go/getflashplayer',
+          'align', 'middle',
+          'play', 'true',
+          'loop', 'true',
+          'scale', 'showall',
+          'wmode', 'transparent',
+          'devicefont', 'false',
+          'id', 'jeejuhplayer',
+          'bgcolor', '#000000',
+          'name', 'jeejuhplayer',
+          'menu', 'true',
+          'allowFullScreen', 'false',
+          'allowScriptAccess','sameDomain',
+          'movie', '/jeejuhplayer/jeejuhplayer_6_12',
+          'salign', ''
+          ); //end AC code
+      </script>
+      <embed width="434" height="157" src="/jeejuhplayer/jeejuhplayer_6_12.swf" quality="high" pluginspage="http://www.adobe.com/go/getflashplayer" align="middle" play="true" loop="true" scale="showall" wmode="transparent" devicefont="false" bgcolor="#000000" name="jeejuhplayer" menu="true" allowfullscreen="false" allowscriptaccess="sameDomain" salign="" type="application/x-shockwave-flash"> 
+      <noscript>
+        &lt;object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="434" height="157" id="jeejuhplayer" align="middle"&gt;
+        &lt;param name="allowScriptAccess" value="sameDomain" /&gt;
+        &lt;param name="allowFullScreen" value="false" /&gt;
+        &lt;param name="movie" value="/jeejuhplayer/jeejuhplayer_6_12.swf" /&gt;&lt;param name="quality" value="high" /&gt;&lt;param name="bgcolor" value="#ffffff" /&gt; &lt;embed src="/jeejuhplayer/jeejuhplayer_6_12.swf" quality="high" bgcolor="#ffffff" width="434" height="157" name="jeejuhplayer" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" /&gt;
+        &lt;/object&gt;
+      </noscript>
     </div>
-    <!-- End of body section HTML codes -->
 
+<script type="text/javascript">
+window.twttr = (function (d, s, id) {
+  var t, js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src= "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+}(document, "script", "twitter-wjs"));
+</script></div>
+  
+    </div>
 
+    <script language="JavaScript" type="text/javascript">
+      if (navigator.userAgent.match(/(iPad|iPhone|iPod|Android)/i)) {
+        document.getElementById('flash_player').innerHTML = '<a href="http://www.jeejuh.com" title="Beats For Sale"><img src="/images/jeejuhproductions.png" alt="Beats For Sale" width="394" height="125" style="margin:11px 0 0 20px" /></a><audio id="jsaudio"></audio>';
+        jsAudio = document.getElementById('jsaudio');
+        hasflash = 0;
+      }
+    </script>
+  </div>
 
+<script language="JavaScript" type="text/javascript">
+  currentSongID = 5493;
+  currentInit = 'NTQ5M3w0cGU=';
+  currentHash = 'NTQ5M3w0cGU=';
+  currentSlug = 'No-Freedom';
+  currentTitle = 'No Freedom';
+  currentBy = 'Tone Jonez';
+  currentDuration = 247;
+  currentLibrary = 1;
+  gprice = 7.95;
+  pprice = 15.95;
+  dprice = 31.95;
+  buy1get1free = false;
+</script>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=149435695087582";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-<br><br><br>
+<div class="page">
 
+  
+<!--<table cellpadding="2px" cellspacing="0" style="width:600px;margin:0 auto;font-weight:bold;text-align:center">
+    <tr>
+      <td><img width="95" src="images/pitbull-square.jpg"><br /></td>
+      <td><img width="95" src="images/chamilionaire-square.jpg"></td>
+      <td><img width="95" src="images/akon-square.jpg"></td>
+      <td><img width="95" src="images/jokerr-square.jpg"></td>
+      <td><img width="95" src="images/lecrae-square.jpg"/td>
+      <td><img width="95" src="images/dizzy-square.jpg"></td>
+      <td><img width="95" src="images/derek-square.jpg"></td>
+      <td><img width="95" src="images/krayzie-square.jpg"></td>
+      <td><img width="95" src="images/currensy-square.jpg"></td>
+      <td><img width="95" src="images/saigon-square.jpg">SAIGON</td>
+      <td><img width="95" src="images/koolg-square.jpg">KOOL G RAP</td>
+      <td><img width="95" src="images/joe-square.jpg">JOE BUDDEN</td>
 
+</tr>
+</tr>
+</table>
+<br />-->
+                 <!--<center style="font-size:26px;color:red;margin-bottom:30px">*** 60% Off All Beats & Special Bulk Deals. Limited Time Only! ***</center>-->
+              
 
-
-
-<!-- START SAMPLE CODE SECTION -->
-
-
-<!-- PARAGRAPH 1 -->
-<p>
-Scroll down to see the Payment section, Or
-<br><br>
-
-Click "Licensing and Pricing" to learn more about how it works.
-<br><br>
-Call/ Text/ E-Mail us if you have any questions.(801-915-1485) 
-<br><br>
-We provide Instant Delivery.
-</p>
-<br><br>
-
-<!-- Another method for the View Cart Form - add this code anywhere within the web page -->
-
-<!-- This is the FORM to view the cart contents -->
-<!-- Note: target="paypal" was replaced with the variable target="_self" -->
-<!-- Note: shopping_url also added to code -->
-<!-- These two changes allow better functionality with IE and Firefox -->
-<form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="viewcart" name="viewcart">
-<!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable in your View Cart code. -->
-<input type="hidden" name="cpp_header_image" value="https://www.yourwebsite.com/logo.jpg">
-<p>
-<input type="hidden" name="cmd" value="_cart">
-<input type="hidden" name="display" value="1">
-<!-- Replace "business" value with your PayPal Email Address or Account ID -->
-<input type="hidden" name="business" value="shayansbn@yahoo.com">
-<!-- Replace value with the web page you want the customer to return to -->
-<input type="hidden" name="shopping_url" value="http://www.shynen.com">
-</p>
-</form>
-<!-- End of the viewcart FORM -->
-
-
-
-
-<!-- Start of Form -->
-<!-- Note: target="paypal" was replaced with the variable target="_self" -->
-<!-- Note: shopping_url also added to code -->
-<!-- These two changes allow better functionality with IE and Firefox -->
-<FORM onsubmit="this.target='_self';&#10; return ReadForm(this, true);" action=https://www.paypal.com/cgi-bin/webscr method=post>
-<!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable in your View Cart code. -->
-<input type="hidden" name="cpp_header_image" value="https://www.yourwebsite.com/logo.jpg">
-<input type="hidden" name="cmd" value="_cart">
-<input type="hidden" name="add" value="1">
-<!-- Replace "business" value with your PayPal Email Address or Account ID -->
-<input type="hidden" name="business" value="shayansbn@yahoo.com">
-<input type="hidden" name="item_name" value="">
-<input type="hidden" name="amount" value="">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="lc" value="US">
-<input type="hidden" name="bn" value="PP-ShopCartBF:btn/btn_cart_LG.gif:NonHosted">
-<!-- Replace value with the web page you want the customer to return to -->
-<input type="hidden" name="shopping_url" value="http://www.shynen.com">
-<!-- Replace value with the web page you want the customer to return to after a successful transaction -->
-<input type="hidden" name="return" value="http://www.yourwebsite.com/ThankYou.html">
-<!-- Replace value with the web page you want the customer to return to after item cancellation -->
-<input type="hidden" name="cancel_return" value="http://www.yourwebsite.com/Cancel.html">
-<input type="hidden" value="00.00" name="baseamt">
-<input type="hidden" value="Beat order - @00.00" name="basedes">
-<input type="hidden" name="button_subtype" value="products">
-<input type="hidden" name="no_note" value="0">
-<input type="hidden" name="cn" value="Add special instructions to the seller:">
-<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
-
-
-<input onclick="ReadForm (this.form, false);" type=checkbox value="1 WAV BEAT LEASE +19.95">1 WAV lease (No Tags) (Platinum quality) - Add $19.95
-<br><br>
-<input onclick="ReadForm (this.form, false);" type=checkbox value="1 MP3 Beat Lease +7.99">1 Mp3 lease (No Tags) (Cd Quality 320) - Add $7.99
-<br><br>
-<input onclick="ReadForm (this.form, false);" type=checkbox value="2 Platinum WAV Beat Lease +30.00"> 2 Platinum WAV leases (no Tags) - Add $30.00 (Limited offer)
-<br><br>
-<input onclick="ReadForm (this.form, false);" type=checkbox value="1 Exclusive Beat Rights +119.95"> 1 Exclusive rights - Add $119.95
-<br><br>
-<input onclick="ReadForm (this.form, false);" type=checkbox value="2 Exclusive Beat Rights +199.95"> 2 Exclusives rights - Add $199.95
-<br><br>
-<input onclick="ReadForm (this.form, false);" type=checkbox value="5 Platinum WAV Beat Leases +69.95"> 5 Wav leases - 69.95
-
-<br><br><br>
-
-Modifications to the Final product.
-<br><br>
-<input onclick="ReadForm (this.form, false);" type=radio value="Exclusive Modification +0.00" name=rad>Exclusive $00.00
 <br>
-<input onclick="ReadForm (this.form, false);" type=radio value="Wav lease Modification +29.99" name=rad>Wav Lease Modification +$29.99
 <br>
-<input onclick="ReadForm (this.form, false);" type=radio value="Mp3 Lease Modification +29.50" name=rad>Mp3 Lease Modification +$29.50
 
-<br><br><br>
+    <script type="text/javascript">
+      $(function() {
+        $('.genre-menu a').click(function() {
+          console.log($(this).hasClass('toggle'));
+          console.log($(this));
+          if ($(this).hasClass('toggle')) {
+            console.log('in');
+            console.log($('.genre-menu'));
+            $('.genre-menu').toggleClass('show-more');
+          } else {
+            $(this).addClass('selected').siblings().removeClass('selected');
+            $('#jsortGenre').val($(this).html()).trigger('onchange');
+          }
+        });
+      });
+    </script>
 
-Choose Delivery:&nbsp;&nbsp;
-<input type="hidden" name="on0" value="Delivery">
-<select name="os0">
-<OPTION value="Store Pick-up - No Charge" selected>Via Email Only - No Charge</OPTION>
-<OPTION value="Please Deliver - No Charge">Instant Delivery - No Charge</OPTION>
-</SELECT>
-
-<br><br><br>
 
 
-<input onclick="this.form.reset ();" type=button value="Reset Form">&nbsp; Item Total &gt;
-<input class=nbor size=6 value=$00.00 name=tot> &nbsp;
 
-<br><br>
-<input type=image alt="cart add" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name=submit>
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 
-<br><br>
-<input onclick="document.forms.viewcart.target = '_self';&#10; document.forms.viewcart.submit ();&#10; return false;" type=image alt="cart view" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> 
-</FORM>
+
+
+
+ <div class="middle_content">
+    <div class="paypal_form">
+      <form id="paypal_form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="business" value="shayansbn@yahoo.com">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="upload" value="1">
+        <input type="hidden" name="no_note" value="1">
+        <input type="hidden" name="no_shipping" value="1">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="https://www.jeejuh.com/download.php">
+        <input type="hidden" name="rm" value="2">
+        <input type="hidden" name="cbt" value="Download Your Beat(s)">
+        <span id="paypal_items"><input type="hidden" name="custom" value="0|63.228.197.39|"></span>
+      </form>
+      <input type="hidden" id="jshopping_cart_ipaddress" value="63.228.197.39">
+      <input type="hidden" id="page" value="index">
+    </div>
+    <div class="jhead" id="jhead">
+      <table class="jhead_table">
+        <tbody><tr>
+          <td class="jbuttons">
+                          <div class="jprev" id="jprev" onclick="playlistNav(&#39;prev&#39;)"></div>
+              <div class="jplay" id="jplay" onclick="playClick()"></div>
+                        <div class="jnext" id="jnext" onclick="playlistNav(&#39;next&#39;)"></div>
+            <div class="jvol" id="jvol"><div class="jvol_tail" id="jvol_tail"></div><div class="jvol_knob" id="jvol_knob"></div></div>
+          </td>
+          <td class="jdisplay" id="jdisplay">
+            <div class="jtitlefade_containter"><div class="jtitlefade"></div></div>
+            <div class="jtitleby">
+              <a href="javascript:void(0)" onclick="playClick()" class="jtitle" id="jtitle">Long Way 2 Go(wHook)</a>
+              <span id="jby"> &nbsp;by <b>Corbett</b></span>
+            </div>
+            <div class="jbpm" id="jbpm">85 bpm</div>
+            <div class="jtrack" id="jtrack" style="color:#666">
+              <span class="jtrack_time" id="jtrack_time">0:28</span>
+              <div class="jtrack_loading" id="jtrack_loading" style="width: 216px;"></div>
+              <div class="jtrack_blue" id="jtrack_blue" style="width: 25px;"></div>
+              <div class="jtrack_head" id="jtrack_head" style="left: 25px;"></div>
+              <div class="jtrack_click" id="jtrack_click" style="cursor: pointer;"></div>
+            </div>
+            <table class="jshare_table">
+              <tbody><tr>
+                <td class="jlike_buttons" id="jlike_buttons">
+                  <div class="jlike_buttons">
+                    <div onclick="likeClick(1)" title="I like this" type="button" class="jlike_buttons_like" id="like_button">
+                      <img class="jlike_buttons_like_img" src="./Jee Juh - Hip Hop Beats for sale _ Buy Rap Instrumentals Online _ Download Royalty Free Music_files/pixel.gif" alt="">
+                    </div><div onclick="likeClick(0)" title="I dislike this" type="button" class="jlike_buttons_dislike" id="dislike_button">
+                      <img class="jlike_buttons_dislike_img" src="./Jee Juh - Hip Hop Beats for sale _ Buy Rap Instrumentals Online _ Download Royalty Free Music_files/pixel.gif" alt="">
+                    </div>
+                  </div>
+                </td>
+                <td class="jlikes" id="jlikes"><div class="jlikes_bar" id="jlikes_bar"><div class="jlikes_green" style="width:73px"></div><div class="jlikes_red" style="width:25px"></div></div><span id="like_count">316</span> likes, <span id="dislike_count">111</span> dislikes</td>
+                <td>Share:</td>
+                <td>
+                  <div id="jshare"><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.jeejuh.com%2FLong-Way-2-Go-wHook" title="Share on Facebook" target="_blank"><div class="jshare_facebook"></div></a> <a href="http://twitter.com/share?url=http%3A%2F%2Fwww.jeejuh.com%2FLong-Way-2-Go-wHook&text=Long%20Way%202%20Go(wHook)%20-%20Beat%20by%20Corbett%20@JeeJuh" title="Share on Twitter" target="_blank"><div class="jshare_twitter"></div></a> <a href="javascript:void(0)" title="Share URL" onclick="showLink(357, &#39;beat&#39;, &#39;Long-Way-2-Go-wHook&#39;)"><div class="jshare_link"></div></a></div>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+          <td class="jsearch">
+            <input class="jsearch_input" id="jsearch_1" onkeyup="searchPlaylist(1, this.value)" onfocus="if(this.value == &#39;Search Beats&#39;) { this.value = &#39;&#39;; this.style.color = &#39;#000&#39;; this.style.width = &#39;60px&#39;; this.style.paddingRight = &#39;22px&#39;; }" onblur="searchPlaylist(1, this.value); if (this.value == &#39;&#39;) { this.value=&#39;Search Beats&#39;;  this.style.color = &#39;#7f7f7f&#39;; this.style.width = &#39;75px&#39;; this.style.paddingRight = &#39;7px&#39;; }" value="Search Beats">
+            <div class="jsearch_close" id="jsearch_close" onclick="searchPlaylist(1, &#39;&#39;); document.getElementById(&#39;jsearch_1&#39;).value=&#39;Search Beats&#39;;  document.getElementById(&#39;jsearch_1&#39;).style.color = &#39;#7f7f7f&#39;; document.getElementById(&#39;jsearch_1&#39;).style.width = &#39;75px&#39;; document.getElementById(&#39;jsearch_1&#39;).style.paddingRight = &#39;7px&#39;; this.style.display = &#39;none&#39;;"></div>
+          </td>
+        </tr>
+      </tbody></table>
+      <div class="jshare_link_container"><div class="jshare_link_content" id="jshare_link_content"><div class="jshare_link_close"><a href="javascript:void(0)">Close</a></div>Link to this <span id="jshare_link_type"></span>:<br><input type="text" class="jshare_link_input" id="jshare_link_input" onclick="this.select()"></div></div>
+    </div>
+    <div class="jsort">
+      <table cellpadding="0" cellspacing="0" width="100%" style="padding:3px 0">
+        <tbody><tr>
+          <td align="center">
+            Sort by:<select id="jsortSortBy" onchange="updateSorting(1)">
+              <option>Hottest</option>
+              <option>Newest</option>
+              <option>Best Rating</option>
+              <option>Beat Title</option>
+              <option>Producer</option>
+              <option>Tempo</option>
+              <option>Random</option>
+            </select>
+          </td>
+          <td align="center">
+            Producer:<select id="jsortProducer" onchange="updateSorting(2)">
+              <option value="">All Producers</option>
+              <option value="Mike">Mike Lightner</option>
+              <option value="Ell">Elliot Waite</option>
+              <option value="Dov">Dov Rohan</option>
+              <option value="Francis">Francis Le Vesta</option>
+              <option value="Epistra">Epistra</option>
+              <option value="Apollo V">Apollo V</option>
+              <option value="Corbett">Corbett</option>
+              <option value="Tone Jonez">Tone Jonez</option>
+              <option value="Leeyou Danceey">Leeyou Danceey</option>
+              <option value="Dreamlife">Dreamlife</option>
+              <option value="Don P">Don P</option>
+            </select>
+          </td>
+          <td align="center">
+            Genre:<select id="jsortGenre" onchange="updateSorting(3)">
+              <option>All Genres</option>
+              <option>Acoustic</option>
+              <option>Chill</option>
+              <option>Club</option>
+              <option>Dance</option>
+              <option>Dark</option>
+              <option>Dirty South</option>
+              <option>Dramatic</option>
+              <option>Dub Step</option>
+              <option>East Coast</option>
+              <option>Exotic</option>
+              <option>Film Music</option>
+              <option>Gangster</option>
+              <option>Hip Hop</option>
+              <option>House</option>
+              <option>Hyphy</option>
+              <option>Old School</option>
+              <option>Pop</option>
+              <option>Reggaeton</option>
+              <option>RnB</option>
+              <option>Rock</option>
+              <option>Smooth</option>
+              <option>Trap</option>
+              <option>Underground</option>
+              <option>Up Beat</option>
+              <option>West Coast</option>
+              <option>With Hook</option>
+            </select>
+          </td>
+        </tr>
+      </tbody></table>
+      <table cellpadding="0" cellspacing="0" width="100%" style="padding:0 0 3px">
+        <tbody><tr>
+          <td align="center">
+            Sounds Like:<select id="jsortSoundsLike" onchange="updateSorting(4)">
+              <option>All Artists</option><option>2 Chainz</option><option>50 Cent</option><option>Adele</option><option>Akon</option><option>Alicia Keys</option><option>Andre 3000</option><option>Atmosphere</option><option>Avicii</option><option>B.o.B</option><option>Beastie Boys</option><option>Beyonce</option><option>Birdman</option><option>Black Eyed Peas</option><option>Blackmill</option><option>Bobby Valentino</option><option>Bone Thugs n Harmony</option><option>Bow Wow</option><option>Brotha Lynch</option><option>Bruno Mars</option><option>Busta Rhymes</option><option>Calvin Harris</option><option>Cascada</option><option>Cassie</option><option>Chamillionaire</option><option>Chris Brown</option><option>Ciara</option><option>Coldplay</option><option>Common</option><option>DJ Quik</option><option>DMX</option><option>David Banner</option><option>Dipset</option><option>Dj Quik</option><option>Dr. Dre</option><option>Drake</option><option>E-40</option><option>Ed Sheeran</option><option>Ellie Goulding</option><option>Eminem</option><option>Far East Movement</option><option>Fat Joe</option><option>Flo Rida</option><option>Flux Pavillion</option><option>G-Unit</option><option>Game</option><option>Grits</option><option>Gucci Mane</option><option>Ice Cube</option><option>Immortal Technique</option><option>J Cole</option><option>Jay-Z</option><option>Jennifer Lopez</option><option>Jeremih</option><option>Jim Jones</option><option>Jordin Sparks</option><option>Juelz Santana</option><option>Just Blaze</option><option>Justin Bieber</option><option>Justin Timberlake</option><option>Kanye West</option><option>Ke$ha</option><option>Keak Da Sneak</option><option>Kelly Rowland</option><option>Keri Hilson</option><option>Kid Cudi</option><option>Lauryn Hill</option><option>LLoyd Banks</option><option>LMFAO</option><option>Lil John</option><option>Lil Kim</option><option>Lil Wayne</option><option>Linkin Park</option><option>Lloyd Banks</option><option>Ludacris</option><option>Lupe Fiasco</option><option>MGK</option><option>Mac Dre</option><option>Mac Miller</option><option>Mack 10</option><option>Mary J. Blige</option><option>Miguel</option><option>Miike Snow</option><option>Mike Shinoda</option><option>Miley Cyrus</option><option>Missy Elliot</option><option>Mos Def</option><option>Nas</option><option>Nate Dogg</option><option>Ne-Yo</option><option>Nelly</option><option>Neptunes</option><option>New Boyz</option><option>Nicki Minaj</option><option>Notorious B.I.G.</option><option>One Republic</option><option>OutKast</option><option>Pharrell</option><option>Pitbull</option><option>Playaz Circle</option><option>Pretty Lights</option><option>Pussycat Dolls</option><option>Ratatat</option><option>Ray Jay</option><option>Rick Ross</option><option>Rihanna</option><option>Scott Storch</option><option>Sean Paul</option><option>Skrillex</option><option>Snoop Dogg</option><option>Soulja Boy</option><option>Steve Aoki</option><option>T-Pain</option><option>T.I.</option><option>Tech N9ne</option><option>The Game</option><option>The Notorious B.I.G.</option><option>Three 6 Mafia</option><option>Timbaland</option><option>Tinie Tempah</option><option>Too Short</option><option>Tupac</option><option>Twista</option><option>Tyga</option><option>Usher</option><option>WC</option><option>Waka Flocka</option><option>Warren G</option><option>Wiz Khalifa</option><option>Wu-Tang Clan</option><option>Xzibit</option><option>Yelawolf</option><option>Ying Yang Twins</option><option>Yo Gotti</option><option>Young Buck</option><option>Young Jeezy</option><option>Young Money</option>
+            </select>
+          </td>
+          <td align="center">
+            Instruments:<select id="jsortInstruments" onchange="updateSorting(5)">
+              <option>All Instruments</option>
+              <option>Bells</option>
+              <option>Brass</option>
+              <option>Choir</option>
+              <option>Clap</option>
+              <option>Flute</option>
+              <option>Guitar</option>
+              <option>Organ</option>
+              <option>Piano</option>
+              <option>Snare</option>
+              <option>Strings</option>
+              <option>Synth</option>
+            </select>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+    <div class="jbody">
+      <div class="jplaylist_container" id="jplaylist_container">
+        <div id="p1">
+          <div class="jplaylist_header" id="jplaylist_header_1">
+            <table id="thead1">
+              <tbody><tr>
+                <td class="h1_c1"></td><td class="separator"></td>
+                <td class="h1_c2" id="h1_c2" onclick="sortPlaylist(1,2,2)"><div>Beat Title</div></td><td class="separator"></td>
+                <td class="h1_c3" id="h1_c3" onclick="sortPlaylist(1,3,3)"><div>Producer</div></td><td class="separator"></td>
+                <td class="h1_c4" id="h1_c4" onclick="sortPlaylist(1,4,4,1,1)"><div>Rating</div></td><td class="separator"></td>
+                <td class="h1_c5" id="h1_c5"><div>MP3 file</div></td><td class="separator"></td>
+                <td class="h1_c6" id="h1_c6"><div>WAV file</div></td><td class="separator"></td>
+                <td class="h1_c7" id="h1_c7"><div>Tracked Out</div></td>
+              </tr>
+            </tbody></table>
+          </div>
+          <div class="jplaylist" id="jplaylist_1" onscroll="syncScroll(this, 1)">
+            <div class="jbuy_menu_container" id="jbuy_menu_container"><div class="jbuy_menu" id="jbuy_menu"></div></div>
+            <table id="jplaylist_table_1" onclick="playlistClick(event);">
+              <tbody id="tbody1">
+                                    <tr class="song_listing" id="5493|No Freedom|Tone Jonez|169|75|104|1|1|No-Freedom|NTQ5M3w0cGU=|http://www.soundclick.com/util/downloadSong.cfm?ID=13012557">
+                      <td class="p1_c1" id="no freedom|tone jonez|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5493"></div></td>
+                      <td class="p1_c2" id="title_5493">No No's</td>
+                      <td class="p1_c3" id="by_5493">Niggaz</td>
+                      <td class="p1_c4" customkey="69.262" title="169 likes, 75 dislikes" id="247">
+                        <div class="jlikes_bar" id="mini_likes_bar_5493" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:30px"></div><div class="jlikes_red" style="width:12px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2420253718"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5493"></td>
+                      <td class="p1_c6" customkey="2420253718"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5493"></td>
+                      <td class="p1_c7" customkey="2420253718"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5493"></td>
+                      <td class="p1_c8" customkey="815.61"></td>
+                      <td class="p1_c9" customkey="1420253718"></td>
+                      <td class="p1_c10" customkey="104"></td>
+                      <td class="p1_c11" id="Dark, Hip Hop, Trap"></td>
+                      <td class="p1_c11" id="Jay-Z, Rick Ross"></td>
+                      <td class="p1_c11" id="Bass, Choir, Chant, Crash, FX, Hi Hat, Guitar, Kick, Piano, Snare, Strings, Sweep"></td>
+                    </tr><script type="text/javascript">var eventTR = document.getElementById("5493|No Freedom|Tone Jonez|169|75|104|1|1|No-Freedom|NTQ5M3w0cGU=|http://www.soundclick.com/util/downloadSong.cfm?ID=13012557");var currentTR = eventTR;</script>                                        <tr class="song_listing current" id="5251|Long Way 2 Go(wHook)|Corbett|316|111|85|1|1|Long-Way-2-Go-wHook|NTI1MXx5Zjk=|http://www.soundclick.com/util/downloadSong.cfm?ID=12873915">
+                      <td class="p1_c1" id="long way 2 go(whook)|corbett|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5251"></div></td>
+                      <td class="p1_c2" id="title_5251">Long Way 2 Go(wHook)</td>
+                      <td class="p1_c3" id="by_5251">Corbett</td>
+                      <td class="p1_c4" customkey="74.005" title="316 likes, 111 dislikes" id="238">
+                        <div class="jlikes_bar" id="mini_likes_bar_5251" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:32px"></div><div class="jlikes_red" style="width:10px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2406929830"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5251"></td>
+                      <td class="p1_c6" customkey="2406929830"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5251"></td>
+                      <td class="p1_c7" customkey="2406929830"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5251"></td>
+                      <td class="p1_c8" customkey="691.63"></td>
+                      <td class="p1_c9" customkey="1406929830"></td>
+                      <td class="p1_c10" customkey="85"></td>
+                      <td class="p1_c11" id="Dramatic, Pop, Up Beat, With Hook"></td>
+                      <td class="p1_c11" id="B.o.B, MGK, T.I."></td>
+                      <td class="p1_c11" id="Clap, Flute, Guitar, Piano, Snare, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5504|Heavenly|Don P|65|22|76|1|1|Heavenly|NTUwNHxrdG0=|https://github.com/Neinx/crownin/blob/master/public/audios/Crownit%20-%20808%20Insturmental.mp3?raw=true">
+                      <td class="p1_c1" id="heavenly|don p|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5504"></div></td>
+                      <td class="p1_c2" id="title_5504">Heavenly</td>
+                      <td class="p1_c3" id="by_5504">Don P</td>
+                      <td class="p1_c4" customkey="74.713" title="65 likes, 22 dislikes" id="202">
+                        <div class="jlikes_bar" id="mini_likes_bar_5504" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:32px"></div><div class="jlikes_red" style="width:10px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2420520006"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5504"></td>
+                      <td class="p1_c6" customkey="2420520006"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5504"></td>
+                      <td class="p1_c7" customkey="2420520006"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5504"></td>
+                      <td class="p1_c8" customkey="449.55"></td>
+                      <td class="p1_c9" customkey="1420520006"></td>
+                      <td class="p1_c10" customkey="76"></td>
+                      <td class="p1_c11" id="Hip Hop, RnB, Smooth"></td>
+                      <td class="p1_c11" id="Alicia Keys, Game, Notorious B.I.G."></td>
+                      <td class="p1_c11" id="Bass, Bells, Brass, Choir, Clap, Chant, Crash, FX, Hi Hat, Horn, Guitar, Kick, Piano, Snare, Strings, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5349|Dreams Last (wHook)|Tone Jonez|93|47|77|1|1|Dreams-Last-wHook|NTM0OXwwMXQ=|https://github.com/Neinx/crownin/blob/master/public/audios/Crownit%20-%20808%20Insturmental.mp3">
+                      <td class="p1_c1" id="dreams last (whook)|tone jonez|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5349"></div></td>
+                      <td class="p1_c2" id="title_5349">Dreams Last (wHook)</td>
+                      <td class="p1_c3" id="by_5349">Tone Jonez</td>
+                      <td class="p1_c4" customkey="66.429" title="93 likes, 47 dislikes" id="221">
+                        <div class="jlikes_bar" id="mini_likes_bar_5349" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:28px"></div><div class="jlikes_red" style="width:14px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2413408598"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5349"></td>
+                      <td class="p1_c6" customkey="2413408598"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5349"></td>
+                      <td class="p1_c7" customkey="2413408598"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5349"></td>
+                      <td class="p1_c8" customkey="432.91"></td>
+                      <td class="p1_c9" customkey="1413408598"></td>
+                      <td class="p1_c10" customkey="77"></td>
+                      <td class="p1_c11" id="Dark, Hip Hop, Smooth, With Hook"></td>
+                      <td class="p1_c11" id="Drake, J Cole, Rick Ross"></td>
+                      <td class="p1_c11" id="Bass, Choir, Chant, Crash, FX, Hi Hat, Guitar, Kick, Piano, Snare, Strings, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5032|5am|Corbett|363|136|87|1|1|5am|NTAzMnwycDE=|http://www.stephaniequinn.com/Music/Canon.mp3">
+                      <td class="p1_c1" id="5am|corbett|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5032"></div></td>
+                      <td class="p1_c2" id="title_5032">5am</td>
+                      <td class="p1_c3" id="by_5032">Corbett</td>
+                      <td class="p1_c4" customkey="72.745" title="363 likes, 136 dislikes" id="180">
+                        <div class="jlikes_bar" id="mini_likes_bar_5032" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:31px"></div><div class="jlikes_red" style="width:11px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2389386657"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5032"></td>
+                      <td class="p1_c6" customkey="2389386657"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5032"></td>
+                      <td class="p1_c7" customkey="2389386657"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5032"></td>
+                      <td class="p1_c8" customkey="426.91"></td>
+                      <td class="p1_c9" customkey="1389386657"></td>
+                      <td class="p1_c10" customkey="87"></td>
+                      <td class="p1_c11" id="Chill, Dark, East Coast"></td>
+                      <td class="p1_c11" id="50 Cent, Lloyd Banks, Nas"></td>
+                      <td class="p1_c11" id="Choir, Clap, Guitar, Piano, Snare, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="5627|Paid My Dues|Apollo V|37|10|160|1|1|Paid-My-Dues|NTYyN3xmcmo=|http://www.stephaniequinn.com/Music/Canon.mp3">
+                      <td class="p1_c1" id="paid my dues|apollo v|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5627"></div></td>
+                      <td class="p1_c2" id="title_5627">Paid My Dues</td>
+                      <td class="p1_c3" id="by_5627">Apollo V</td>
+                      <td class="p1_c4" customkey="78.723" title="37 likes, 10 dislikes" id="222">
+                        <div class="jlikes_bar" id="mini_likes_bar_5627" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:34px"></div><div class="jlikes_red" style="width:8px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2426375718"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5627"></td>
+                      <td class="p1_c6" customkey="2426375718"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5627"></td>
+                      <td class="p1_c7" customkey="2426375718"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5627"></td>
+                      <td class="p1_c8" customkey="373.49"></td>
+                      <td class="p1_c9" customkey="1426375718"></td>
+                      <td class="p1_c10" customkey="160"></td>
+                      <td class="p1_c11" id="Club, Dirty South, Hip Hop"></td>
+                      <td class="p1_c11" id="B.o.B, Eminem, T.I."></td>
+                      <td class="p1_c11" id="Bass, Brass, Clap, Hi Hat, Horn, Kick, Snare, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5426|80s Baby|Tone Jonez|51|16|92|1|1|80s-Baby|NTQyNnwycG0=|http://www.stephaniequinn.com/Music/Canon.mp3">
+                      <td class="p1_c1" id="80s baby|tone jonez|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5426"></div></td>
+                      <td class="p1_c2" id="title_5426">80s Baby</td>
+                      <td class="p1_c3" id="by_5426">Tone Jonez</td>
+                      <td class="p1_c4" customkey="76.119" title="51 likes, 16 dislikes" id="219">
+                        <div class="jlikes_bar" id="mini_likes_bar_5426" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:32px"></div><div class="jlikes_red" style="width:10px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2417549295"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5426"></td>
+                      <td class="p1_c6" customkey="2417549295"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5426"></td>
+                      <td class="p1_c7" customkey="2417549295"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5426"></td>
+                      <td class="p1_c8" customkey="371.34"></td>
+                      <td class="p1_c9" customkey="1417549295"></td>
+                      <td class="p1_c10" customkey="92"></td>
+                      <td class="p1_c11" id="Hip Hop, Old School, Smooth"></td>
+                      <td class="p1_c11" id="Notorious B.I.G."></td>
+                      <td class="p1_c11" id="Bass, Clap, Crash, FX, Hi Hat, Guitar, Kick, Piano, Snare, Strings, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5644|Good Enough (wHook)|Tone Jonez|30|14|81|1|1|Good-Enough-wHook|NTY0NHxzZGw=|http://www.soundclick.com/util/downloadSong.cfm?ID=13084335">
+                      <td class="p1_c1" id="good enough (whook)|tone jonez|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5644"></div></td>
+                      <td class="p1_c2" id="title_5644">Good Enough (wHook)</td>
+                      <td class="p1_c3" id="by_5644">Tone Jonez</td>
+                      <td class="p1_c4" customkey="68.182" title="30 likes, 14 dislikes" id="270">
+                        <div class="jlikes_bar" id="mini_likes_bar_5644" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:29px"></div><div class="jlikes_red" style="width:13px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2427327343"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5644"></td>
+                      <td class="p1_c6" customkey="2427327343"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5644"></td>
+                      <td class="p1_c7" customkey="2427327343"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5644"></td>
+                      <td class="p1_c8" customkey="371.33"></td>
+                      <td class="p1_c9" customkey="1427327343"></td>
+                      <td class="p1_c10" customkey="81"></td>
+                      <td class="p1_c11" id="Dark, With Hook"></td>
+                      <td class="p1_c11" id="Drake, J Cole"></td>
+                      <td class="p1_c11" id="Bass, Clap, Chant, Crash, FX, Hi Hat, Horn, Guitar, Kick, Piano, Snare, Strings, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5665|3rd Ave|Apollo V|9|4|140|1|1|3rd-Ave|NTY2NXw5aG0=|http://www.soundclick.com/util/downloadSong.cfm?ID=13103026">
+                      <td class="p1_c1" id="3rd ave|apollo v|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5665"></div></td>
+                      <td class="p1_c2" id="title_5665">3rd Ave</td>
+                      <td class="p1_c3" id="by_5665">Apollo V</td>
+                      <td class="p1_c4" customkey="69.231" title="9 likes, 4 dislikes" id="194">
+                        <div class="jlikes_bar" id="mini_likes_bar_5665" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:30px"></div><div class="jlikes_red" style="width:12px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2429311522"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5665"></td>
+                      <td class="p1_c6" customkey="2429311522"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5665"></td>
+                      <td class="p1_c7" customkey="2429311522"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5665"></td>
+                      <td class="p1_c8" customkey="371.32"></td>
+                      <td class="p1_c9" customkey="1429311522"></td>
+                      <td class="p1_c10" customkey="140"></td>
+                      <td class="p1_c11" id="Dirty South, Gangster, Trap"></td>
+                      <td class="p1_c11" id="Kevin Gates, Yelawolf, Young Thug"></td>
+                      <td class="p1_c11" id="Bass, Crash, FX, Hi Hat, Kick, Piano, Snare, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5659|Now VS Never|Dreamlife|12|1|89|1|1|Now-VS-Never|NTY1OXxpd3k=|http://www.soundclick.com/util/downloadSong.cfm?ID=13098916">
+                      <td class="p1_c1" id="now vs never|dreamlife|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5659"></div></td>
+                      <td class="p1_c2" id="title_5659">Now VS Never</td>
+                      <td class="p1_c3" id="by_5659">Dreamlife</td>
+                      <td class="p1_c4" customkey="92.308" title="12 likes, 1 dislikes" id="281">
+                        <div class="jlikes_bar" id="mini_likes_bar_5659" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:39px"></div><div class="jlikes_red" style="width:3px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2428859834"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5659"></td>
+                      <td class="p1_c6" customkey="2428859834"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5659"></td>
+                      <td class="p1_c7" customkey="2428859834"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5659"></td>
+                      <td class="p1_c8" customkey="371.31"></td>
+                      <td class="p1_c9" customkey="1428859834"></td>
+                      <td class="p1_c10" customkey="89"></td>
+                      <td class="p1_c11" id="Chill, Hip Hop, Smooth"></td>
+                      <td class="p1_c11" id="Asap Rocky, Drake, Kid Ink"></td>
+                      <td class="p1_c11" id="Bass, Clap, Crash, FX, Hi Hat, Guitar, Kick, Snare, Strings, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5655|In My Zone|Dreamlife|19|3|70|1|1|In-My-Zone|NTY1NXxoOGk=|http://www.soundclick.com/util/downloadSong.cfm?ID=13087243">
+                      <td class="p1_c1" id="in my zone|dreamlife|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5655"></div></td>
+                      <td class="p1_c2" id="title_5655">In My Zone</td>
+                      <td class="p1_c3" id="by_5655">Dreamlife</td>
+                      <td class="p1_c4" customkey="86.364" title="19 likes, 3 dislikes" id="329">
+                        <div class="jlikes_bar" id="mini_likes_bar_5655" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:37px"></div><div class="jlikes_red" style="width:5px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2427654092"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5655"></td>
+                      <td class="p1_c6" customkey="2427654092"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5655"></td>
+                      <td class="p1_c7" customkey="2427654092"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5655"></td>
+                      <td class="p1_c8" customkey="371.3"></td>
+                      <td class="p1_c9" customkey="1427654092"></td>
+                      <td class="p1_c10" customkey="70"></td>
+                      <td class="p1_c11" id="Chill, Hip Hop, Trap"></td>
+                      <td class="p1_c11" id="Chris Brown, Logic, Twista"></td>
+                      <td class="p1_c11" id="Bass, Clap, Crash, FX, Hi Hat, Kick, Piano, Snare, Strings, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5661|Quiet Storm|Dreamlife|3|1|72|1|1|Quiet-Storm|NTY2MXwzZWU=|http://www.soundclick.com/util/downloadSong.cfm?ID=13106770">
+                      <td class="p1_c1" id="quiet storm|dreamlife|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5661"></div></td>
+                      <td class="p1_c2" id="title_5661">Quiet Storm</td>
+                      <td class="p1_c3" id="by_5661">Dreamlife</td>
+                      <td class="p1_c4" customkey="75.000" title="3 likes, 1 dislikes" id="334">
+                        <div class="jlikes_bar" id="mini_likes_bar_5661" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:32px"></div><div class="jlikes_red" style="width:10px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2429731115"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5661"></td>
+                      <td class="p1_c6" customkey="2429731115"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5661"></td>
+                      <td class="p1_c7" customkey="2429731115"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5661"></td>
+                      <td class="p1_c8" customkey="370.29"></td>
+                      <td class="p1_c9" customkey="1429731115"></td>
+                      <td class="p1_c10" customkey="72"></td>
+                      <td class="p1_c11" id="Chill, Hip Hop, Smooth"></td>
+                      <td class="p1_c11" id="J Cole, Kendrick Lamar, Miguel"></td>
+                      <td class="p1_c11" id="Bass, Bells, Clap, Crash, FX, Hi Hat, Horn, Kick, Piano, Snare, Strings, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5552|Waking Up In Vegas|Leeyou Danceey|38|12|93|1|1|Waking-Up-In-Vegas|NTU1Mnw0NGM=|http://www.soundclick.com/util/downloadSong.cfm?ID=13039124">
+                      <td class="p1_c1" id="waking up in vegas|leeyou danceey|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5552"></div></td>
+                      <td class="p1_c2" id="title_5552">Waking Up In Vegas</td>
+                      <td class="p1_c3" id="by_5552">Leeyou Danceey</td>
+                      <td class="p1_c4" customkey="76.000" title="38 likes, 12 dislikes" id="188">
+                        <div class="jlikes_bar" id="mini_likes_bar_5552" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:32px"></div><div class="jlikes_red" style="width:10px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2422667159"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5552"></td>
+                      <td class="p1_c6" customkey="2422667159"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5552"></td>
+                      <td class="p1_c7" customkey="2422667159"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5552"></td>
+                      <td class="p1_c8" customkey="355.02"></td>
+                      <td class="p1_c9" customkey="1422667159"></td>
+                      <td class="p1_c10" customkey="93"></td>
+                      <td class="p1_c11" id="Club, Pop, Up Beat"></td>
+                      <td class="p1_c11" id="B.o.B, Bruno Mars, Iggy Azalea"></td>
+                      <td class="p1_c11" id="Bass, Clap, Chant, FX, Hi Hat, Guitar, Kick, Piano, Snare, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="4870|End Of The Road|Apollo V|434|145|60|1|1|End-Of-The-Road|NDg3MHx0NG0=|http://www.soundclick.com/util/downloadSong.cfm?ID=12361679">
+                      <td class="p1_c1" id="end of the road|apollo v|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_4870"></div></td>
+                      <td class="p1_c2" id="title_4870">End Of The Road</td>
+                      <td class="p1_c3" id="by_4870">Apollo V</td>
+                      <td class="p1_c4" customkey="74.957" title="434 likes, 145 dislikes" id="240">
+                        <div class="jlikes_bar" id="mini_likes_bar_4870" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:32px"></div><div class="jlikes_red" style="width:10px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2370910448"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_4870"></td>
+                      <td class="p1_c6" customkey="2370910448"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_4870"></td>
+                      <td class="p1_c7" customkey="2370910448"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_4870"></td>
+                      <td class="p1_c8" customkey="352.33"></td>
+                      <td class="p1_c9" customkey="1370910448"></td>
+                      <td class="p1_c10" customkey="60"></td>
+                      <td class="p1_c11" id="Chill, Dark, RnB"></td>
+                      <td class="p1_c11" id="Alicia Keys, Eminem, Miguel"></td>
+                      <td class="p1_c11" id="Clap, Guitar, Piano, Snare, Strings, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5667|Im So Fly|Leeyou Danceey|8|1|140|1|1|Im-So-Fly|NTY2N3xlM3c=|http://www.soundclick.com/util/downloadSong.cfm?ID=13105566">
+                      <td class="p1_c1" id="im so fly|leeyou danceey|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5667"></div></td>
+                      <td class="p1_c2" id="title_5667">Im So Fly</td>
+                      <td class="p1_c3" id="by_5667">Leeyou Danceey</td>
+                      <td class="p1_c4" customkey="88.889" title="8 likes, 1 dislikes" id="213">
+                        <div class="jlikes_bar" id="mini_likes_bar_5667" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:38px"></div><div class="jlikes_red" style="width:4px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2429604142"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5667"></td>
+                      <td class="p1_c6" customkey="2429604142"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5667"></td>
+                      <td class="p1_c7" customkey="2429604142"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5667"></td>
+                      <td class="p1_c8" customkey="342.74"></td>
+                      <td class="p1_c9" customkey="1429604142"></td>
+                      <td class="p1_c10" customkey="140"></td>
+                      <td class="p1_c11" id="Club, Dramatic, Hip Hop"></td>
+                      <td class="p1_c11" id="2 Chainz, Kid Ink, Tyga"></td>
+                      <td class="p1_c11" id="Bass, Bells, Clap, FX, Hi Hat, Guitar, Kick, Piano, Snare"></td>
+                    </tr>                                        <tr class="song_listing" id="5585|The Flatline|Dreamlife|45|10|75|1|1|The-Flatline|NTU4NXw4MzE=|http://www.soundclick.com/util/downloadSong.cfm?ID=13048034">
+                      <td class="p1_c1" id="the flatline|dreamlife|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5585"></div></td>
+                      <td class="p1_c2" id="title_5585">The Flatline</td>
+                      <td class="p1_c3" id="by_5585">Dreamlife</td>
+                      <td class="p1_c4" customkey="81.818" title="45 likes, 10 dislikes" id="285">
+                        <div class="jlikes_bar" id="mini_likes_bar_5585" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:35px"></div><div class="jlikes_red" style="width:7px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2423596658"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5585"></td>
+                      <td class="p1_c6" customkey="2423596658"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5585"></td>
+                      <td class="p1_c7" customkey="2423596658"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5585"></td>
+                      <td class="p1_c8" customkey="330.65"></td>
+                      <td class="p1_c9" customkey="1423596658"></td>
+                      <td class="p1_c10" customkey="75"></td>
+                      <td class="p1_c11" id="Dark, Gangster, Hip Hop"></td>
+                      <td class="p1_c11" id="Eminem, Lloyd Banks, Meek Mill"></td>
+                      <td class="p1_c11" id="Bass, Bells, Clap, Crash, FX, Hi Hat, Kick, Organ, Piano, Snare, Strings, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5348|Unconditional (wHook)|Tone Jonez|66|17|86|1|1|Unconditional-wHook|NTM0OHxkeDM=|http://www.soundclick.com/util/downloadSong.cfm?ID=12950089">
+                      <td class="p1_c1" id="unconditional (whook)|tone jonez|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5348"></div></td>
+                      <td class="p1_c2" id="title_5348">Unconditional (wHook)</td>
+                      <td class="p1_c3" id="by_5348">Tone Jonez</td>
+                      <td class="p1_c4" customkey="79.518" title="66 likes, 17 dislikes" id="234">
+                        <div class="jlikes_bar" id="mini_likes_bar_5348" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:34px"></div><div class="jlikes_red" style="width:8px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2414098658"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5348"></td>
+                      <td class="p1_c6" customkey="2414098658"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5348"></td>
+                      <td class="p1_c7" customkey="2414098658"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5348"></td>
+                      <td class="p1_c8" customkey="330.54"></td>
+                      <td class="p1_c9" customkey="1414098658"></td>
+                      <td class="p1_c10" customkey="86"></td>
+                      <td class="p1_c11" id="Hip Hop, RnB, With Hook"></td>
+                      <td class="p1_c11" id="Jeremih, Ne-Yo, Ray Jay"></td>
+                      <td class="p1_c11" id="Bass, Clap, Crash, FX, Hi Hat, Guitar, Kick, Piano, Snare, Strings, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5663|Ocean Side|Leeyou Danceey|7|3|80|1|1|Ocean-Side|NTY2M3wxZ2E=|http://www.soundclick.com/util/downloadSong.cfm?ID=13101592">
+                      <td class="p1_c1" id="ocean side|leeyou danceey|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5663"></div></td>
+                      <td class="p1_c2" id="title_5663">Ocean Side</td>
+                      <td class="p1_c3" id="by_5663">Leeyou Danceey</td>
+                      <td class="p1_c4" customkey="70.000" title="7 likes, 3 dislikes" id="231">
+                        <div class="jlikes_bar" id="mini_likes_bar_5663" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:30px"></div><div class="jlikes_red" style="width:12px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2429139921"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5663"></td>
+                      <td class="p1_c6" customkey="2429139921"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5663"></td>
+                      <td class="p1_c7" customkey="2429139921"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5663"></td>
+                      <td class="p1_c8" customkey="325.67"></td>
+                      <td class="p1_c9" customkey="1429139921"></td>
+                      <td class="p1_c10" customkey="80"></td>
+                      <td class="p1_c11" id="Chill, Smooth"></td>
+                      <td class="p1_c11" id="Drake, Kendrick Lamar"></td>
+                      <td class="p1_c11" id="Bass, Clap, FX, Kick, Piano"></td>
+                    </tr>                                        <tr class="song_listing" id="5666|Internet Gangster|Epistra|8|4|89|1|1|Internet-Gangster|NTY2Nnx2Nm4=|http://www.soundclick.com/util/downloadSong.cfm?ID=13104279">
+                      <td class="p1_c1" id="internet gangster|epistra|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5666"></div></td>
+                      <td class="p1_c2" id="title_5666">Internet Gangster</td>
+                      <td class="p1_c3" id="by_5666">Epistra</td>
+                      <td class="p1_c4" customkey="66.667" title="8 likes, 4 dislikes" id="211">
+                        <div class="jlikes_bar" id="mini_likes_bar_5666" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:29px"></div><div class="jlikes_red" style="width:13px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2429483056"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5666"></td>
+                      <td class="p1_c6" customkey="2429483056"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5666"></td>
+                      <td class="p1_c7" customkey="2429483056"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5666"></td>
+                      <td class="p1_c8" customkey="325.11"></td>
+                      <td class="p1_c9" customkey="1429483056"></td>
+                      <td class="p1_c10" customkey="89"></td>
+                      <td class="p1_c11" id="Exotic, Gangster, Hip Hop"></td>
+                      <td class="p1_c11" id="Jay-Z, Joey Badass, MGK"></td>
+                      <td class="p1_c11" id="Bass, Brass, Choir, Clap, Chant, Crash, Flute, FX, Hi Hat, Horn, Kick, Snare, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="5518|My Next Ex|Leeyou Danceey|38|16|95|1|1|My-Next-Ex|NTUxOHxrZzg=|http://www.soundclick.com/util/downloadSong.cfm?ID=13023266">
+                      <td class="p1_c1" id="my next ex|leeyou danceey|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5518"></div></td>
+                      <td class="p1_c2" id="title_5518">My Next Ex</td>
+                      <td class="p1_c3" id="by_5518">Leeyou Danceey</td>
+                      <td class="p1_c4" customkey="70.370" title="38 likes, 16 dislikes" id="197">
+                        <div class="jlikes_bar" id="mini_likes_bar_5518" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:30px"></div><div class="jlikes_red" style="width:12px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2421220097"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5518"></td>
+                      <td class="p1_c6" customkey="2421220097"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5518"></td>
+                      <td class="p1_c7" customkey="2421220097"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5518"></td>
+                      <td class="p1_c8" customkey="320.14"></td>
+                      <td class="p1_c9" customkey="1421220097"></td>
+                      <td class="p1_c10" customkey="95"></td>
+                      <td class="p1_c11" id="Chill, Club, Trap"></td>
+                      <td class="p1_c11" id="2 Chainz, Tyga, YG"></td>
+                      <td class="p1_c11" id="Bass, Bells, Clap, Chant, Hi Hat, Kick, Snare"></td>
+                    </tr>                                        <tr class="song_listing" id="5425|Reflections|Tone Jonez|46|19|131|1|1|Reflections|NTQyNXxlOHc=|http://www.soundclick.com/util/downloadSong.cfm?ID=12993629">
+                      <td class="p1_c1" id="reflections|tone jonez|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5425"></div></td>
+                      <td class="p1_c2" id="title_5425">Reflections</td>
+                      <td class="p1_c3" id="by_5425">Tone Jonez</td>
+                      <td class="p1_c4" customkey="70.769" title="46 likes, 19 dislikes" id="187">
+                        <div class="jlikes_bar" id="mini_likes_bar_5425" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:30px"></div><div class="jlikes_red" style="width:12px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2418245665"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5425"></td>
+                      <td class="p1_c6" customkey="2418245665"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5425"></td>
+                      <td class="p1_c7" customkey="2418245665"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5425"></td>
+                      <td class="p1_c8" customkey="307.01"></td>
+                      <td class="p1_c9" customkey="1418245665"></td>
+                      <td class="p1_c10" customkey="131"></td>
+                      <td class="p1_c11" id="Acoustic, Hip Hop, Trap"></td>
+                      <td class="p1_c11" id="Jay-Z, Justin Timberlake, Rick Ross"></td>
+                      <td class="p1_c11" id="Bass, Bells, Clap, Crash, FX, Hi Hat, Guitar, Kick, Piano, Snare, Strings, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="4662|Guerrilla Warfare|Epistra|432|129|93|1|1|Guerrilla-Warfare|NDY2MnxnZmg=|http://www.soundclick.com/util/downloadSong.cfm?ID=12123893">
+                      <td class="p1_c1" id="guerrilla warfare|epistra|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_4662"></div></td>
+                      <td class="p1_c2" id="title_4662">Guerrilla Warfare</td>
+                      <td class="p1_c3" id="by_4662">Epistra</td>
+                      <td class="p1_c4" customkey="77.005" title="432 likes, 129 dislikes" id="213">
+                        <div class="jlikes_bar" id="mini_likes_bar_4662" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:33px"></div><div class="jlikes_red" style="width:9px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2358912522"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_4662"></td>
+                      <td class="p1_c6" customkey="2358912522"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_4662"></td>
+                      <td class="p1_c7" customkey="2358912522"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_4662"></td>
+                      <td class="p1_c8" customkey="306.44"></td>
+                      <td class="p1_c9" customkey="1358912522"></td>
+                      <td class="p1_c10" customkey="93"></td>
+                      <td class="p1_c11" id="Dark, Dramatic, Gangster"></td>
+                      <td class="p1_c11" id="50 Cent, Game, Just Blaze"></td>
+                      <td class="p1_c11" id="Bells, Choir, Snare, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="5169|Talk 2 Me|Corbett|155|30|68|1|1|Talk-2-Me|NTE2OXxnODE=|http://www.soundclick.com/util/downloadSong.cfm?ID=12803209">
+                      <td class="p1_c1" id="talk 2 me|corbett|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5169"></div></td>
+                      <td class="p1_c2" id="title_5169">Talk 2 Me</td>
+                      <td class="p1_c3" id="by_5169">Corbett</td>
+                      <td class="p1_c4" customkey="83.784" title="155 likes, 30 dislikes" id="240">
+                        <div class="jlikes_bar" id="mini_likes_bar_5169" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:36px"></div><div class="jlikes_red" style="width:6px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2401209774"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5169"></td>
+                      <td class="p1_c6" customkey="2401209774"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5169"></td>
+                      <td class="p1_c7" customkey="2401209774"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5169"></td>
+                      <td class="p1_c8" customkey="303.87"></td>
+                      <td class="p1_c9" customkey="1401209774"></td>
+                      <td class="p1_c10" customkey="68"></td>
+                      <td class="p1_c11" id="Chill, Club, Gangster"></td>
+                      <td class="p1_c11" id="2 Chainz, Drake, J Cole"></td>
+                      <td class="p1_c11" id="Clap, Piano, Snare, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5629|Late Night Tip|Dreamlife|24|5|64|1|1|Late-Night-Tip|NTYyOXw2Mmk=|http://www.soundclick.com/util/downloadSong.cfm?ID=13077764">
+                      <td class="p1_c1" id="late night tip|dreamlife|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5629"></div></td>
+                      <td class="p1_c2" id="title_5629">Late Night Tip</td>
+                      <td class="p1_c3" id="by_5629">Dreamlife</td>
+                      <td class="p1_c4" customkey="82.759" title="24 likes, 5 dislikes" id="356">
+                        <div class="jlikes_bar" id="mini_likes_bar_5629" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:35px"></div><div class="jlikes_red" style="width:7px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2426615477"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5629"></td>
+                      <td class="p1_c6" customkey="2426615477"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5629"></td>
+                      <td class="p1_c7" customkey="2426615477"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5629"></td>
+                      <td class="p1_c8" customkey="290.72"></td>
+                      <td class="p1_c9" customkey="1426615477"></td>
+                      <td class="p1_c10" customkey="64"></td>
+                      <td class="p1_c11" id="Chill, Dirty South, Trap"></td>
+                      <td class="p1_c11" id="Asap Rocky, Drake, Future"></td>
+                      <td class="p1_c11" id="Bass, Clap, Crash, FX, Hi Hat, Kick, Snare, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5422|Runnin Back (wHook)|Tone Jonez|34|16|82|1|1|Runnin-Back-wHook|NTQyMnxtZmk=|http://www.soundclick.com/util/downloadSong.cfm?ID=13004944">
+                      <td class="p1_c1" id="runnin back (whook)|tone jonez|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5422"></div></td>
+                      <td class="p1_c2" id="title_5422">Runnin Back (wHook)</td>
+                      <td class="p1_c3" id="by_5422">Tone Jonez</td>
+                      <td class="p1_c4" customkey="68.000" title="34 likes, 16 dislikes" id="290">
+                        <div class="jlikes_bar" id="mini_likes_bar_5422" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:29px"></div><div class="jlikes_red" style="width:13px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2419391452"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5422"></td>
+                      <td class="p1_c6" customkey="2419391452"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5422"></td>
+                      <td class="p1_c7" customkey="2419391452"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5422"></td>
+                      <td class="p1_c8" customkey="290.66"></td>
+                      <td class="p1_c9" customkey="1419391452"></td>
+                      <td class="p1_c10" customkey="82"></td>
+                      <td class="p1_c11" id="Hip Hop, Smooth, With Hook"></td>
+                      <td class="p1_c11" id="Kendrick Lamar, Lupe Fiasco, Nas"></td>
+                      <td class="p1_c11" id="Bass, Bells, Brass, Clap, Crash, Flute, FX, Hi Hat, Horn, Guitar, Kick, Piano, Snare, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="5424|Lord Knows|Tone Jonez|38|8|75|1|1|Lord-Knows|NTQyNHxnejU=|http://www.soundclick.com/util/downloadSong.cfm?ID=13000467">
+                      <td class="p1_c1" id="lord knows|tone jonez|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5424"></div></td>
+                      <td class="p1_c2" id="title_5424">Lord Knows</td>
+                      <td class="p1_c3" id="by_5424">Tone Jonez</td>
+                      <td class="p1_c4" customkey="82.609" title="38 likes, 8 dislikes" id="227">
+                        <div class="jlikes_bar" id="mini_likes_bar_5424" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:35px"></div><div class="jlikes_red" style="width:7px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2418928562"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5424"></td>
+                      <td class="p1_c6" customkey="2418928562"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5424"></td>
+                      <td class="p1_c7" customkey="2418928562"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5424"></td>
+                      <td class="p1_c8" customkey="277.33"></td>
+                      <td class="p1_c9" customkey="1418928562"></td>
+                      <td class="p1_c10" customkey="75"></td>
+                      <td class="p1_c11" id="Hip Hop, Old School, Trap"></td>
+                      <td class="p1_c11" id="Kendrick Lamar, Rick Ross"></td>
+                      <td class="p1_c11" id="Bass, Brass, Choir, Clap, Chant, Crash, FX, Hi Hat, Horn, Guitar, Kick, Organ, Piano, Snare"></td>
+                    </tr>                                        <tr class="song_listing" id="5473|Sky Aint The Limit|Leeyou Danceey|42|15|80|1|1|Sky-Aint-The-Limit|NTQ3M3x6MGE=|http://www.soundclick.com/util/downloadSong.cfm?ID=13004428">
+                      <td class="p1_c1" id="sky aint the limit|leeyou danceey|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5473"></div></td>
+                      <td class="p1_c2" id="title_5473">Sky Aint The Limit</td>
+                      <td class="p1_c3" id="by_5473">Leeyou Danceey</td>
+                      <td class="p1_c4" customkey="73.684" title="42 likes, 15 dislikes" id="210">
+                        <div class="jlikes_bar" id="mini_likes_bar_5473" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:31px"></div><div class="jlikes_red" style="width:11px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2419301643"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5473"></td>
+                      <td class="p1_c6" customkey="2419301643"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5473"></td>
+                      <td class="p1_c7" customkey="2419301643"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5473"></td>
+                      <td class="p1_c8" customkey="271.11"></td>
+                      <td class="p1_c9" customkey="1419301643"></td>
+                      <td class="p1_c10" customkey="80"></td>
+                      <td class="p1_c11" id="Dramatic, Hip Hop, Up Beat"></td>
+                      <td class="p1_c11" id="Ice Cube, The Game, Xzibit"></td>
+                      <td class="p1_c11" id="Bass, Brass, Clap, Chant, FX, Kick, Snare, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5545|Get Behind Me|Corbett|51|18|79|1|1|Get-Behind-Me|NTU0NXxlMmc=|http://www.soundclick.com/util/downloadSong.cfm?ID=13030219">
+                      <td class="p1_c1" id="get behind me|corbett|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5545"></div></td>
+                      <td class="p1_c2" id="title_5545">Get Behind Me</td>
+                      <td class="p1_c3" id="by_5545">Corbett</td>
+                      <td class="p1_c4" customkey="73.913" title="51 likes, 18 dislikes" id="237">
+                        <div class="jlikes_bar" id="mini_likes_bar_5545" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:32px"></div><div class="jlikes_red" style="width:10px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2421888813"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5545"></td>
+                      <td class="p1_c6" customkey="2421888813"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5545"></td>
+                      <td class="p1_c7" customkey="2421888813"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5545"></td>
+                      <td class="p1_c8" customkey="247.84"></td>
+                      <td class="p1_c9" customkey="1421888813"></td>
+                      <td class="p1_c10" customkey="79"></td>
+                      <td class="p1_c11" id="Dirty South, Gangster"></td>
+                      <td class="p1_c11" id="2 Chainz, Drake, Eminem"></td>
+                      <td class="p1_c11" id="Bass, Bells, Clap, Crash, Flute, FX, Hi Hat, Guitar, Kick, Snare, Strings, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="5305|Knight Rider|Leeyou Danceey|78|15|65|1|1|Knight-Rider|NTMwNXxyNWM=|http://www.soundclick.com/util/downloadSong.cfm?ID=12923500">
+                      <td class="p1_c1" id="knight rider|leeyou danceey|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5305"></div></td>
+                      <td class="p1_c2" id="title_5305">Knight Rider</td>
+                      <td class="p1_c3" id="by_5305">Leeyou Danceey</td>
+                      <td class="p1_c4" customkey="83.871" title="78 likes, 15 dislikes" id="198">
+                        <div class="jlikes_bar" id="mini_likes_bar_5305" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:36px"></div><div class="jlikes_red" style="width:6px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2411495643"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5305"></td>
+                      <td class="p1_c6" customkey="2411495643"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5305"></td>
+                      <td class="p1_c7" customkey="2411495643"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5305"></td>
+                      <td class="p1_c8" customkey="244.66"></td>
+                      <td class="p1_c9" customkey="1411495643"></td>
+                      <td class="p1_c10" customkey="65"></td>
+                      <td class="p1_c11" id="Chill, Dark, Gangster"></td>
+                      <td class="p1_c11" id="2 Chainz, Kid Ink, MGK"></td>
+                      <td class="p1_c11" id="Bass, Bells, Clap, Chant, FX, Hi Hat, Kick, Snare"></td>
+                    </tr>                                        <tr class="song_listing" id="5662|Fuck What They Say|Leeyou Danceey|5|4|75|1|1|Fuck-What-They-Say|NTY2MnwxNXA=|http://www.soundclick.com/util/downloadSong.cfm?ID=13103572">
+                      <td class="p1_c1" id="fuck what they say|leeyou danceey|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5662"></div></td>
+                      <td class="p1_c2" id="title_5662">Fuck What They Say</td>
+                      <td class="p1_c3" id="by_5662">Leeyou Danceey</td>
+                      <td class="p1_c4" customkey="55.556" title="5 likes, 4 dislikes" id="202">
+                        <div class="jlikes_bar" id="mini_likes_bar_5662" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:24px"></div><div class="jlikes_red" style="width:18px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2429390166"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5662"></td>
+                      <td class="p1_c6" customkey="2429390166"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5662"></td>
+                      <td class="p1_c7" customkey="2429390166"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5662"></td>
+                      <td class="p1_c8" customkey="242.55"></td>
+                      <td class="p1_c9" customkey="1429390166"></td>
+                      <td class="p1_c10" customkey="75"></td>
+                      <td class="p1_c11" id="Chill, Hip Hop, Smooth"></td>
+                      <td class="p1_c11" id="Kendrick Lamar, Nas, The Game"></td>
+                      <td class="p1_c11" id="Bass, Clap, Hi Hat, Kick, Organ, Snare"></td>
+                    </tr>                                        <tr class="song_listing" id="5028|Voice of the Victorious|Epistra|144|47|89|1|1|Voice-of-the-Victorious|NTAyOHxydXE=|http://www.soundclick.com/util/downloadSong.cfm?ID=12584372">
+                      <td class="p1_c1" id="voice of the victorious|epistra|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5028"></div></td>
+                      <td class="p1_c2" id="title_5028">Voice of the Victorious</td>
+                      <td class="p1_c3" id="by_5028">Epistra</td>
+                      <td class="p1_c4" customkey="75.393" title="144 likes, 47 dislikes" id="232">
+                        <div class="jlikes_bar" id="mini_likes_bar_5028" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:32px"></div><div class="jlikes_red" style="width:10px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2385424272"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5028"></td>
+                      <td class="p1_c6" customkey="2385424272"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5028"></td>
+                      <td class="p1_c7" customkey="2385424272"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5028"></td>
+                      <td class="p1_c8" customkey="231.78"></td>
+                      <td class="p1_c9" customkey="1385424272"></td>
+                      <td class="p1_c10" customkey="89"></td>
+                      <td class="p1_c11" id="Dramatic, Hyphy, Pop"></td>
+                      <td class="p1_c11" id="Akon, B.o.B, Kid Cudi"></td>
+                      <td class="p1_c11" id="Brass, Choir, Clap, Guitar, Piano, Snare, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="5549|Hindu Swag|Leeyou Danceey|47|8|150|1|1|Hindu-Swag|NTU0OXxtNmI=|http://www.soundclick.com/util/downloadSong.cfm?ID=13032019">
+                      <td class="p1_c1" id="hindu swag|leeyou danceey|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5549"></div></td>
+                      <td class="p1_c2" id="title_5549">Hindu Swag</td>
+                      <td class="p1_c3" id="by_5549">Leeyou Danceey</td>
+                      <td class="p1_c4" customkey="85.455" title="47 likes, 8 dislikes" id="262">
+                        <div class="jlikes_bar" id="mini_likes_bar_5549" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:36px"></div><div class="jlikes_red" style="width:6px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2422080881"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5549"></td>
+                      <td class="p1_c6" customkey="2422080881"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5549"></td>
+                      <td class="p1_c7" customkey="2422080881"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5549"></td>
+                      <td class="p1_c8" customkey="228.08"></td>
+                      <td class="p1_c9" customkey="1422080881"></td>
+                      <td class="p1_c10" customkey="150"></td>
+                      <td class="p1_c11" id="Club, Exotic, Hip Hop"></td>
+                      <td class="p1_c11" id="2 Chainz, Kid Ink, Tyga"></td>
+                      <td class="p1_c11" id="Bass, Clap, FX, Kick, Snare"></td>
+                    </tr>                                        <tr class="song_listing" id="5335|Glow In The Dark|Leeyou Danceey|45|26|95|1|1|Glow-In-The-Dark|NTMzNXx4em0=|http://www.soundclick.com/util/downloadSong.cfm?ID=12942298">
+                      <td class="p1_c1" id="glow in the dark|leeyou danceey|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5335"></div></td>
+                      <td class="p1_c2" id="title_5335">Glow In The Dark</td>
+                      <td class="p1_c3" id="by_5335">Leeyou Danceey</td>
+                      <td class="p1_c4" customkey="63.380" title="45 likes, 26 dislikes" id="190">
+                        <div class="jlikes_bar" id="mini_likes_bar_5335" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:27px"></div><div class="jlikes_red" style="width:15px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2413307306"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5335"></td>
+                      <td class="p1_c6" customkey="2413307306"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5335"></td>
+                      <td class="p1_c7" customkey="2413307306"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5335"></td>
+                      <td class="p1_c8" customkey="221.55"></td>
+                      <td class="p1_c9" customkey="1413307306"></td>
+                      <td class="p1_c10" customkey="95"></td>
+                      <td class="p1_c11" id="Chill, Club, Dark"></td>
+                      <td class="p1_c11" id="Iggy Azalea, Kid Ink, Wiz Khalifa"></td>
+                      <td class="p1_c11" id="Bass, Clap, Chant, FX, Hi Hat, Kick, Snare"></td>
+                    </tr>                                        <tr class="song_listing" id="4716|Lets Take It Back|Apollo V|292|78|73|1|1|Lets-Take-It-Back|NDcxNnxuOXE=|http://www.soundclick.com/util/downloadSong.cfm?ID=12200637">
+                      <td class="p1_c1" id="lets take it back|apollo v|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_4716"></div></td>
+                      <td class="p1_c2" id="title_4716">Lets Take It Back</td>
+                      <td class="p1_c3" id="by_4716">Apollo V</td>
+                      <td class="p1_c4" customkey="78.919" title="292 likes, 78 dislikes" id="230">
+                        <div class="jlikes_bar" id="mini_likes_bar_4716" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:34px"></div><div class="jlikes_red" style="width:8px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2362533557"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_4716"></td>
+                      <td class="p1_c6" customkey="2362533557"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_4716"></td>
+                      <td class="p1_c7" customkey="2362533557"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_4716"></td>
+                      <td class="p1_c8" customkey="217.7"></td>
+                      <td class="p1_c9" customkey="1362533557"></td>
+                      <td class="p1_c10" customkey="73"></td>
+                      <td class="p1_c11" id="Chill, RnB"></td>
+                      <td class="p1_c11" id="Kelly Rowland, Keri Hilson, Mary J. Blige"></td>
+                      <td class="p1_c11" id="Bells, Piano, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="5274|King Shit|Leeyou Danceey|72|29|77|1|1|King-Shit|NTI3NHwycnQ=|http://www.soundclick.com/util/downloadSong.cfm?ID=12910569">
+                      <td class="p1_c1" id="king shit|leeyou danceey|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5274"></div></td>
+                      <td class="p1_c2" id="title_5274">King Shit</td>
+                      <td class="p1_c3" id="by_5274">Leeyou Danceey</td>
+                      <td class="p1_c4" customkey="71.287" title="72 likes, 29 dislikes" id="212">
+                        <div class="jlikes_bar" id="mini_likes_bar_5274" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:30px"></div><div class="jlikes_red" style="width:12px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2410282300"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5274"></td>
+                      <td class="p1_c6" customkey="2410282300"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5274"></td>
+                      <td class="p1_c7" customkey="2410282300"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5274"></td>
+                      <td class="p1_c8" customkey="217.54"></td>
+                      <td class="p1_c9" customkey="1410282300"></td>
+                      <td class="p1_c10" customkey="77"></td>
+                      <td class="p1_c11" id="Club, Dark, Underground"></td>
+                      <td class="p1_c11" id="Chris Brown, Kid Ink, Tyga"></td>
+                      <td class="p1_c11" id="Bells, Clap, Snare"></td>
+                    </tr>                                        <tr class="song_listing" id="5047|Make It Happen 2|Corbett|189|63|71|1|1|Make-It-Happen-2|NTA0N3w3aWY=|http://www.soundclick.com/util/downloadSong.cfm?ID=12690619">
+                      <td class="p1_c1" id="make it happen 2|corbett|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5047"></div></td>
+                      <td class="p1_c2" id="title_5047">Make It Happen 2</td>
+                      <td class="p1_c3" id="by_5047">Corbett</td>
+                      <td class="p1_c4" customkey="75.000" title="189 likes, 63 dislikes" id="257">
+                        <div class="jlikes_bar" id="mini_likes_bar_5047" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:32px"></div><div class="jlikes_red" style="width:10px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2392756743"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5047"></td>
+                      <td class="p1_c6" customkey="2392756743"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5047"></td>
+                      <td class="p1_c7" customkey="2392756743"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5047"></td>
+                      <td class="p1_c8" customkey="213.11"></td>
+                      <td class="p1_c9" customkey="1392756743"></td>
+                      <td class="p1_c10" customkey="71"></td>
+                      <td class="p1_c11" id="Dark, Dirty South, Gangster"></td>
+                      <td class="p1_c11" id="MGK, Nicki Minaj, T.I."></td>
+                      <td class="p1_c11" id="Bells, Brass, Choir, Clap, Organ, Piano, Snare, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="3859|Push|Elliot Waite|819|159|121|1|1|Push|Mzg1OXw5eXc=|http://www.soundclick.com/util/downloadSong.cfm?ID=10813430">
+                      <td class="p1_c1" id="push|elliot waite|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_3859"></div></td>
+                      <td class="p1_c2" id="title_3859">Push</td>
+                      <td class="p1_c3" id="by_3859">Elliot Waite</td>
+                      <td class="p1_c4" customkey="83.742" title="819 likes, 159 dislikes" id="240">
+                        <div class="jlikes_bar" id="mini_likes_bar_3859" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:36px"></div><div class="jlikes_red" style="width:6px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2306778651"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_3859"></td>
+                      <td class="p1_c6" customkey="2306778651"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_3859"></td>
+                      <td class="p1_c7" customkey="2306778651"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_3859"></td>
+                      <td class="p1_c8" customkey="208.5"></td>
+                      <td class="p1_c9" customkey="1306778651"></td>
+                      <td class="p1_c10" customkey="121"></td>
+                      <td class="p1_c11" id="Club, Dance, Hyphy"></td>
+                      <td class="p1_c11" id="Far East Movement, LMFAO"></td>
+                      <td class="p1_c11" id="Bells, Clap, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="4452|Final Battle|Epistra|635|119|85|1|1|Final-Battle|NDQ1MnxhOTg=|http://www.soundclick.com/util/downloadSong.cfm?ID=11800273">
+                      <td class="p1_c1" id="final battle|epistra|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_4452"></div></td>
+                      <td class="p1_c2" id="title_4452">Final Battle</td>
+                      <td class="p1_c3" id="by_4452">Epistra</td>
+                      <td class="p1_c4" customkey="84.218" title="635 likes, 119 dislikes" id="234">
+                        <div class="jlikes_bar" id="mini_likes_bar_4452" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:36px"></div><div class="jlikes_red" style="width:6px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2343748130"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_4452"></td>
+                      <td class="p1_c6" customkey="2343748130"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_4452"></td>
+                      <td class="p1_c7" customkey="2343748130"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_4452"></td>
+                      <td class="p1_c8" customkey="207.9"></td>
+                      <td class="p1_c9" customkey="1343748130"></td>
+                      <td class="p1_c10" customkey="85"></td>
+                      <td class="p1_c11" id="Dark, Underground"></td>
+                      <td class="p1_c11" id="Immortal Technique, Notorious B.I.G., Tech N9ne"></td>
+                      <td class="p1_c11" id="Bells, Choir, Snare, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="5660|Thousand Tears|Epistra|11|4|65|1|1|Thousand-Tears|NTY2MHwxaDU=|http://www.soundclick.com/util/downloadSong.cfm?ID=13097240">
+                      <td class="p1_c1" id="thousand tears|epistra|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5660"></div></td>
+                      <td class="p1_c2" id="title_5660">Thousand Tears</td>
+                      <td class="p1_c3" id="by_5660">Epistra</td>
+                      <td class="p1_c4" customkey="73.333" title="11 likes, 4 dislikes" id="316">
+                        <div class="jlikes_bar" id="mini_likes_bar_5660" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:31px"></div><div class="jlikes_red" style="width:11px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2428690671"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5660"></td>
+                      <td class="p1_c6" customkey="2428690671"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5660"></td>
+                      <td class="p1_c7" customkey="2428690671"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5660"></td>
+                      <td class="p1_c8" customkey="207.23"></td>
+                      <td class="p1_c9" customkey="1428690671"></td>
+                      <td class="p1_c10" customkey="65"></td>
+                      <td class="p1_c11" id="Film Music, Hip Hop"></td>
+                      <td class="p1_c11" id="Bone Thugs n Harmony, Macklemore"></td>
+                      <td class="p1_c11" id="Bass, Choir, Clap, Chant, Crash, FX, Hi Hat, Kick, Piano, Snare, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="5646|Fallen Kingdom|Tone Jonez|10|3|103|1|1|Fallen-Kingdom|NTY0NnwyYWw=|http://www.soundclick.com/util/downloadSong.cfm?ID=13092002">
+                      <td class="p1_c1" id="fallen kingdom|tone jonez|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5646"></div></td>
+                      <td class="p1_c2" id="title_5646">Fallen Kingdom</td>
+                      <td class="p1_c3" id="by_5646">Tone Jonez</td>
+                      <td class="p1_c4" customkey="76.923" title="10 likes, 3 dislikes" id="193">
+                        <div class="jlikes_bar" id="mini_likes_bar_5646" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:33px"></div><div class="jlikes_red" style="width:9px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2428092949"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5646"></td>
+                      <td class="p1_c6" customkey="2428092949"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5646"></td>
+                      <td class="p1_c7" customkey="2428092949"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5646"></td>
+                      <td class="p1_c8" customkey="205.96"></td>
+                      <td class="p1_c9" customkey="1428092949"></td>
+                      <td class="p1_c10" customkey="103"></td>
+                      <td class="p1_c11" id="Dramatic, Film Music, Trap"></td>
+                      <td class="p1_c11" id="Meek Mill"></td>
+                      <td class="p1_c11" id="Bass, Bells, Brass, Choir, Clap, Chant, Crash, FX, Hi Hat, Horn, Guitar, Kick, Piano, Snare, Strings, Sweep, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="4961|Rise Above|Epistra|169|50|89|1|1|Rise-Above|NDk2MXw0dG8=|http://www.soundclick.com/util/downloadSong.cfm?ID=12475225">
+                      <td class="p1_c1" id="rise above|epistra|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_4961"></div></td>
+                      <td class="p1_c2" id="title_4961">Rise Above</td>
+                      <td class="p1_c3" id="by_4961">Epistra</td>
+                      <td class="p1_c4" customkey="77.169" title="169 likes, 50 dislikes" id="243">
+                        <div class="jlikes_bar" id="mini_likes_bar_4961" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:33px"></div><div class="jlikes_red" style="width:9px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2377727224"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_4961"></td>
+                      <td class="p1_c6" customkey="2377727224"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_4961"></td>
+                      <td class="p1_c7" customkey="2377727224"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_4961"></td>
+                      <td class="p1_c8" customkey="199.25"></td>
+                      <td class="p1_c9" customkey="1377727224"></td>
+                      <td class="p1_c10" customkey="89"></td>
+                      <td class="p1_c11" id="Dramatic, Exotic, Underground"></td>
+                      <td class="p1_c11" id="Akon, Bone Thugs n Harmony, The Game"></td>
+                      <td class="p1_c11" id="Choir, Piano, Snare, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="5579|XXL|Apollo V|25|3|143|1|1|XXL|NTU3OXxiNXA=|http://www.soundclick.com/util/downloadSong.cfm?ID=13049965">
+                      <td class="p1_c1" id="xxl|apollo v|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5579"></div></td>
+                      <td class="p1_c2" id="title_5579">XXL</td>
+                      <td class="p1_c3" id="by_5579">Apollo V</td>
+                      <td class="p1_c4" customkey="89.286" title="25 likes, 3 dislikes" id="211">
+                        <div class="jlikes_bar" id="mini_likes_bar_5579" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:38px"></div><div class="jlikes_red" style="width:4px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2423790412"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5579"></td>
+                      <td class="p1_c6" customkey="2423790412"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5579"></td>
+                      <td class="p1_c7" customkey="2423790412"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5579"></td>
+                      <td class="p1_c8" customkey="194.03"></td>
+                      <td class="p1_c9" customkey="1423790412"></td>
+                      <td class="p1_c10" customkey="143"></td>
+                      <td class="p1_c11" id="Club, Dirty South, RnB"></td>
+                      <td class="p1_c11" id="B.o.B, Beyonce, Kid Ink"></td>
+                      <td class="p1_c11" id="Bass, Brass, Clap, Chant, FX, Hi Hat, Kick, Snare, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="4930|We Can Make It|Corbett|113|50|81|1|1|We-Can-Make-It|NDkzMHxqeXk=|http://www.soundclick.com/util/downloadSong.cfm?ID=12494181">
+                      <td class="p1_c1" id="we can make it|corbett|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_4930"></div></td>
+                      <td class="p1_c2" id="title_4930">We Can Make It</td>
+                      <td class="p1_c3" id="by_4930">Corbett</td>
+                      <td class="p1_c4" customkey="69.325" title="113 likes, 50 dislikes" id="237">
+                        <div class="jlikes_bar" id="mini_likes_bar_4930" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:30px"></div><div class="jlikes_red" style="width:12px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2378933257"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_4930"></td>
+                      <td class="p1_c6" customkey="2378933257"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_4930"></td>
+                      <td class="p1_c7" customkey="2378933257"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_4930"></td>
+                      <td class="p1_c8" customkey="194.02"></td>
+                      <td class="p1_c9" customkey="1378933257"></td>
+                      <td class="p1_c10" customkey="81"></td>
+                      <td class="p1_c11" id="Dark, Dramatic, Underground"></td>
+                      <td class="p1_c11" id="Atmosphere, DMX, Eminem"></td>
+                      <td class="p1_c11" id="Choir, Guitar, Organ, Piano, Snare, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="5419|Beamer|Don P|44|12|62|1|1|Beamer|NTQxOXx5M2g=|http://www.soundclick.com/util/downloadSong.cfm?ID=12978375">
+                      <td class="p1_c1" id="beamer|don p|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5419"></div></td>
+                      <td class="p1_c2" id="title_5419">Beamer</td>
+                      <td class="p1_c3" id="by_5419">Don P</td>
+                      <td class="p1_c4" customkey="78.571" title="44 likes, 12 dislikes" id="217">
+                        <div class="jlikes_bar" id="mini_likes_bar_5419" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:33px"></div><div class="jlikes_red" style="width:9px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2416696570"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5419"></td>
+                      <td class="p1_c6" customkey="2416696570"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5419"></td>
+                      <td class="p1_c7" customkey="2416696570"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5419"></td>
+                      <td class="p1_c8" customkey="190.93"></td>
+                      <td class="p1_c9" customkey="1416696570"></td>
+                      <td class="p1_c10" customkey="62"></td>
+                      <td class="p1_c11" id="Club, Dirty South, Trap"></td>
+                      <td class="p1_c11" id="2 Chainz, Yo Gotti, Young Jeezy"></td>
+                      <td class="p1_c11" id="Bass, Bells, Clap, Crash, FX, Hi Hat, Kick, Snare, Synth"></td>
+                    </tr>                                        <tr class="song_listing" id="4839|Die for You (wHook)|Epistra|217|37|87|1|1|Die-for-You-wHook|NDgzOXxhaDY=|http://www.soundclick.com/util/downloadSong.cfm?ID=12297038">
+                      <td class="p1_c1" id="die for you (whook)|epistra|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_4839"></div></td>
+                      <td class="p1_c2" id="title_4839">Die for You (wHook)</td>
+                      <td class="p1_c3" id="by_4839">Epistra</td>
+                      <td class="p1_c4" customkey="85.433" title="217 likes, 37 dislikes" id="265">
+                        <div class="jlikes_bar" id="mini_likes_bar_4839" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:36px"></div><div class="jlikes_red" style="width:6px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2367265815"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_4839"></td>
+                      <td class="p1_c6" customkey="2367265815"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_4839"></td>
+                      <td class="p1_c7" customkey="2367265815"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_4839"></td>
+                      <td class="p1_c8" customkey="188.23"></td>
+                      <td class="p1_c9" customkey="1367265815"></td>
+                      <td class="p1_c10" customkey="87"></td>
+                      <td class="p1_c11" id="Dramatic, East Coast, Pop, With Hook"></td>
+                      <td class="p1_c11" id="Adele, Akon, Bruno Mars"></td>
+                      <td class="p1_c11" id="Brass, Choir, Piano, Snare, Strings"></td>
+                    </tr>                                        <tr class="song_listing" id="5045|Baddest Girl(wHook)|Corbett|123|29|78.5|1|1|Baddest-Girl-wHook|NTA0NXx2Yzc=|http://www.soundclick.com/util/downloadSong.cfm?ID=12654520">
+                      <td class="p1_c1" id="baddest girl(whook)|corbett|$19.95|$39.95|$79.95"><div class="jspeaker" id="speaker_5045"></div></td>
+                      <td class="p1_c2" id="title_5045">Baddest Girl(wHook)</td>
+                      <td class="p1_c3" id="by_5045">Corbett</td>
+                      <td class="p1_c4" customkey="80.921" title="123 likes, 29 dislikes" id="245">
+                        <div class="jlikes_bar" id="mini_likes_bar_5045" style="width:44px">
+                          <div class="jlikes_green white_right" style="width:34px"></div><div class="jlikes_red" style="width:8px"></div>                        </div>
+                      </td>
+                      <td class="p1_c5" customkey="2390338895"><div class="price">$7.95</div> <input type="checkbox" class="G_check" id="G_check_5045"></td>
+                      <td class="p1_c6" customkey="2390338895"><div class="price">$15.95</div> <input type="checkbox" class="P_check" id="P_check_5045"></td>
+                      <td class="p1_c7" customkey="2390338895"><div class="price">$31.95</div> <input type="checkbox" class="D_check" id="D_check_5045"></td>
+                      <td class="p1_c8" customkey="186.21"></td>
+                      <td class="p1_c9" customkey="1390338895"></td>
+                      <td class="p1_c10" customkey="78.5"></td>
+                      <td class="p1_c11" id="Chill, Pop, Up Beat, With Hook"></td>
+                      <td class="p1_c11" id="B.o.B, T.I., Young Money"></td>
+                      <td class="p1_c11" id="Clap, Piano, Snare, Strings, Synth"></td>
+                    </tr>
+
+  </tbody>
+            </table>
+          </div>
+                      <script type="text/javascript">
+              scrollToSong(1);
+              if (!hasflash) playClick();
+            </script>
+                  </div>
+      </div>
+    </div>
+    <div class="jfoot" id="jfoot">
+      <div class="jcart" id="jcart" style="margin-top: 25px; margin-left: 24px;">Items Selected: 0 beats ($0.00)</div>
+      <script language="JavaScript" type="text/javascript">initializeCart();</script>
+      <div class="jadd_to_cart" onclick="if (document.getElementById(&#39;jcart&#39;).innerHTML == &#39;Items Selected: 0 beats ($0.00)&#39;) { alert(&#39;You have 0 items selected. Select items by clicking the checkboxes listed in the playlist.&#39;); } else { document.getElementById(&#39;paypal_form&#39;).submit(); }">Buy Now</div>
+    </div>
+    <br><br>
+
+  </div>
+  </initializeCart();<>
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- END BUTTON EXAMPLES -->
@@ -465,110 +1412,6 @@ Choose Delivery:&nbsp;&nbsp;
             <div class="row content-row">
                 <div class="col-lg-12">
                     <div class="about-carousel">
-                        <div class="item">
-                            <img src="assets/img/people/1.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Patricia West</h3>
-                                <hr class="colored">
-                                <p>Marketing Director</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/people/2.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Howard Scott</h3>
-                                <hr class="colored">
-                                <p>Sales Manager</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/people/3.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Kate Williams</h3>
-                                <hr class="colored">
-                                <p>Creative Director</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-dribbble fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/people/4.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Amy Vanderbute</h3>
-                                <hr class="colored">
-                                <p>Graphic Artist</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-dribbble fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/people/5.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Jeremy Davidson</h3>
-                                <hr class="colored">
-                                <p>Web Developer</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-github fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
