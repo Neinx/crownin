@@ -1,0 +1,74 @@
+body{background:#000 url(/images/bg.jpg) center top;color:#fff;font-family:tahoma,verdana,arial,sans-serif;font-size:11px;text-align:left;margin:0;}
+
+a{color:#40b1e6;text-decoration:none;}
+a:hover{color:#57c6ff;text-decoration:underline;}
+a:active{color:#299ce1;}
+img{border:none;}
+textarea{overflow-x:hidden;overflow-y:auto;}
+h1{text-align:center;font:normal 24px Georgia,'Times New Roman',Times,serif;}
+h2{height:18px;margin:0 0 5px;padding:0;color:#222;font-family:'Helvetica Neue',Arial,Helvetica,'Nimbus Sans L',sans-serif;font-size:14px;font-weight:bold;}
+h3{height:13px;margin:0 0 5px;padding:4px 5px 5px;background-color:#F2F2F2;border-top:1px solid #E2E2E2;color:#333;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;}
+h4{color:#333;font-family:'Lucida Grande',Tahoma,Verdana,Arial,sans-serif;font-size:20px;font-weight:normal;margin:25px 0 15px 0;}
+
+.gray{color:gray;}
+.display_none{display:none;}
+.indent{margin:5px 0;padding-left:15px;border-left:1px solid #ccc;}
+.error{color:#f00;}
+.underline{text-decoration:underline;}
+.button{border:1px solid #A0B3D9;-moz-border-radius:3px;-webkit-border-radius:3px;-khtml-border-radius:3px;border-radius:3px;cursor:pointer;font-size:12px;font-weight:bold;height:25px;padding:0 6px 0;vertical-align:middle;font-family:arial,sans-serif;background:#DDEAFC url(/images/blue-button-bg.png);}
+.button:hover{border-color:#3F4756;box-shadow:#999 0 0 3px 0;}
+.button:active{background-color:#afc0e0;background-position:0 -25px;}
+
+table {
+display: table;
+border-collapse: separate;
+border-spacing: 0px;
+}
+
+
+.navbar,.header,.page,.footer{width:980px;margin:0 auto;}
+
+.page{width:978px;min-height:421px;padding:0 0 30px;background:#fff url(/images/sp-nfx.png) repeat-x 0 -50px;color:#000;font-family:Arial,Tahoma,Helvetica,FreeSans,sans-serif;font-size:13px;}
+.page a{color:#28B;}
+.page a:hover{color:#3AF;}
+
+.header{padding:0px 0 0px;}
+
+
+.navbar{height:37px;background:url(/images/sp-nfx.png) repeat-x;}
+.navbar_left{width:3px;height:37px;background:url(/images/sp-nf.png) no-repeat 0 -165px;float:left;}
+.navbar_right{width:3px;height:37px;background:url(/images/sp-nf.png) no-repeat -2px -165px;float:right;}
+.navbar a{color:#fff;width:100px;height:25px;margin:4px 10px 0 0;padding-top:8px;float:left;font:13px helvetica,sans-serif;text-align:center;background:url(/images/sp-nf.png) no-repeat 0 33px;}
+.navbar a.next_to_last{margin-right:4px;}
+.navbar a.last{margin-right:0;}
+.navbar a:hover{background-position:0 0;text-decoration:none;}
+.navbar a:active{background-position:0 -33px;}
+.navbar a.current{background-position:0 -66px;}
+.navbar a.current:hover{background-position:0 -99px;}
+.navbar a.current:active{background-position:0 -132px;}
+
+.footer{clear:both;color:#999;margin-bottom:52px;}
+.footbar{height:13px;background:url(/images/sp-nfx.png) repeat-x 0 -37px;margin-bottom:11px;}
+.footbar_left{width:3px;height:13px;background:url(/images/sp-nf.png) no-repeat -5px -165px;float:left;}
+.footbar_right{width:3px;height:13px;background:url(/images/sp-nf.png) no-repeat -7px -165px;float:right;}
+.footer_copy{float:left;padding-left:8px;}
+.footer_links{float:right;padding-right:8px;}
+
+.middle_only_content{width:590px;margin:0 auto;}
+
+.jeejuhtv_video_display{width:853px;margin:0 auto;padding-bottom:21px;display:none;}
+.jeejuhtv_video{width:445px;margin:0 0 13px 30px;float:left;}
+.jeejuhtv_thumb{float:left;padding-right:13px;}
+.jeejuhtv_thumb img{display:inline-block;padding:4px;background:white;border:1px solid lightGrey;-moz-border-radius:3px;-webkit-border-radius:3px;-khtml-border-radius:3px;border-radius:3px;}
+.jeejuhtv_video_info{font-size:11px;color:#666;}
+.jeejuhtv_footer{clear:both;margin:0 auto;padding-top:21px;max-width:610px;font-size:16px;text-align:center;}
+
+.faq_question{padding-top:1em;font-size:16px;}
+.faq_answer{display:none;padding:5px 0;}
+.faq_answer .indent{margin:0;}
+
+#message_sent{display:none;text-align:center;}
+
+.download_page{line-height:17px;color:#222;}
+.download_page .gray{font-size:12px;margin-left:3px;}
+.download_page .beat_title{font-family:'Lucida Grande',Tahoma,Verdana,Arial,sans-serif;font-size:16px;}
