@@ -11,10 +11,10 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 group :development, :test do
-	gem 'sqlite3'
+  gem 'sqlite3'
 end
 group :production do
-	gem 'pg'
+  gem 'pg'
 end
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
